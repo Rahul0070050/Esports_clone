@@ -1,0 +1,15 @@
+@font-face {
+    font-family: main-font;
+    font-weight: bold;
+    src: url('../../public/fonts/delargodtblackitalic.ttf');
+}
+:root {
+    --dark: #26282a;
+    --white: #fff;
+    --red: red;
+    --reddish: #b22727;
+    --homeSearchBtn: #989898;
+    --homeSearchBar: #e8e8e8;
+    --fontFamily: main-font;
+
+}
