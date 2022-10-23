@@ -94,3 +94,25 @@ header .heading-right .bottum span span {
 /* *********************** */
 /* ends header */
 /* *********************** */
+
+
+/* *********************** */
+/* start nav */
+/* *********************** */
+.selected-link {
+    background-image: linear-gradient(to right, var(--red),var(--dark));
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+nav ul li {
+    padding: 0.2rem 3rem;
+}
+nav ul li a {
+    color: var(--white) !important;
+}
+/* *********************** */
+/* start nav */
+/* *********************** */
