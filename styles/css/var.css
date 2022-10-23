@@ -4,6 +4,7 @@
     src: url('../../public/fonts/delargodtblackitalic.ttf');
 }
 :root {
+    --black: black;
     --dark: #26282a;
     --white: #fff;
     --red: red;

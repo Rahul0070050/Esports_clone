@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     border-bottom: 2px solid var(--reddish);
 }
+/* start heading left */
 header .heading-left {
     display: flex;
     align-items: center;
@@ -33,7 +34,9 @@ header .heading-left span strong:first-child {
     color: var(--white);
     font-weight: 900;
 }
+/* end heading left */
 
+/* start heading right */
 header .heading-right {
     padding-top: 4px;
 }
@@ -55,13 +58,14 @@ header .heading-right .top .search button {
     color: var(--white);
 }
 header .heading-right .top .search input {
+    width: 20rem;
     background-color: var(--homeSearchBar);
 }
 header .heading-right .top .search input:focus {
     outline: none;
 }
 header .heading-right .top .social-media-icons {
-    margin: 0 1rem 0 2rem;    
+    margin: 0 1rem 0 2rem;
 }
 header .heading-right .top .social-media-icons img {
     width: 1.7rem;
@@ -72,17 +76,16 @@ header .heading-right .bottum {
     text-align: right;
 }
 header .heading-right .bottum span a {
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 header .heading-right .bottum span:last-child {
     margin-left: 3rem;
     height: 100% !important;
     padding: 0.7rem 2rem;
     font-size: 2.2rem;
-    background-image: linear-gradient(to right, var(--dark),var(--red));
+    background-image: linear-gradient(to right, var(--dark), var(--red));
 }
 header .heading-right .bottum span span {
     display: inline-block;
@@ -91,28 +94,181 @@ header .heading-right .bottum span span {
     margin: 0 1rem -0.5rem 1rem;
     background-color: #606060;
 }
+/* end heading right */
+
 /* *********************** */
 /* ends header */
 /* *********************** */
-
 
 /* *********************** */
 /* start nav */
 /* *********************** */
 .selected-link {
-    background-image: linear-gradient(to right, var(--red),var(--dark));
+    background-image: linear-gradient(to right, var(--red), var(--dark));
 }
 nav ul {
     list-style: none;
     display: flex;
     padding: 0;
+    margin: 0;
 }
 nav ul li {
-    padding: 0.2rem 3rem;
+    padding: 0.3rem 3rem;
 }
 nav ul li a {
     color: var(--white) !important;
 }
 /* *********************** */
 /* start nav */
+/* *********************** */
+
+/* *********************** */
+/* start carousel */
+/* *********************** */
+.company-names {
+    height: 10rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.carousel-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#carousel-right-btn {
+    position: static;
+    width: fit-content;
+}
+#carousel-right-btn img {
+    width: 2rem;
+}
+.carousel-indicators {
+    position: static;
+    margin: 0 3rem;
+}
+.carousel-indicators button{
+    height: 2rem !important;
+    width: 2rem !important;
+    border-radius: 50% !important;
+}
+#carousel-left-btn {
+    position: static;
+    width: fit-content;
+}
+#carousel-left-btn img {
+    width: 2rem;
+    transform: rotate(180deg);
+}
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    display: none;
+}
+/* *********************** */
+/* start carousel */
+/* *********************** */
+
+
+/* *********************** */
+/* start top players */
+/* *********************** */
+.home-list {
+    display: flex;
+}
+.top-players {
+    width: 66%;
+}
+.top-players h2 {
+    margin:  0 0 2rem 7rem;
+    padding: 1rem;
+    border-left: solid var(--white) 0.5rem;
+}
+.top-players ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.top-players ul li {
+    border-radius: 5px;
+    margin: 2rem;
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    box-shadow: 2px 2px 24px 5px var(--black);
+    overflow: hidden;
+}
+.top-players ul li .info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(transparent,var(--dark));
+    bottom: -3rem;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+}
+.top-players ul li .info strong {
+    margin-bottom: 1rem;
+}
+.top-players ul li:hover .info {
+    bottom: 0;
+    opacity: 1;
+}
+.top-players ul li img {
+    position: absolute;
+    width: 100%;
+}
+/* *********************** */
+/* end top players*/
+/* *********************** */
+
+
+/* *********************** */
+/* start top views*/
+/* *********************** */
+.top-views {
+    width: 34%;
+}
+.top-views h2 {
+    margin:  0 0 2rem 5rem;
+    padding: 1rem;
+    border-left: solid var(--white) 0.5rem;
+}
+.top-views ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-views ul li {
+    border-radius: 5px;
+    margin: 2rem;
+    box-shadow: 2px 2px 24px 5px var(--black);
+    position: relative;
+    width: 30rem;
+    height: 16rem;
+    overflow: hidden;
+}
+.top-views ul li > span {
+    padding: 1rem;
+    box-shadow: 1px 1px 10px 1px var(--black);
+    border-radius: 0 0 10px 0;
+}
+.top-views ul li .info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(transparent,var(--dark));
+    bottom: -3rem;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+.top-views ul li:hover .info {
+    bottom: 0;
+    opacity: 1;
+}
+.top-views ul li img {
+    position: absolute;
+    width: 100%;
+}
+/* *********************** */
+/* end top views*/
 /* *********************** */
