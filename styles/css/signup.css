@@ -1,0 +1,19 @@
+@import "var.css";
+
+.signup {
+    min-height: 100vh;
+}
+.signup .right {
+    padding: 1rem 5rem !important;
+}
+.signup .radio div {
+    display: flex;
+    margin: 2rem 0 !important;
+}
+.signup .form .right form div {
+    margin: 2.5rem 0;
+}
+.signup .radio div input {
+    width: 1rem !important;
+    height: 1rem !important;
+}

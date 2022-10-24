@@ -1,0 +1,23 @@
+.cunfirm-otp .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cunfirm-otp .form .left {
+    width: 60%;
+}
+.cunfirm-otp .form .left .timer {
+    color: var(--reddish);
+}
+.cunfirm-otp .form .left .otp span {
+    display: flex !important;
+}
+
+.cunfirm-otp .form .left .otp span input {
+    text-align: center;
+    margin: 0 0.4rem;
+}
+.cunfirm-otp .form .left .otp span input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

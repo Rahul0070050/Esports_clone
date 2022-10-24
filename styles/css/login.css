@@ -1,0 +1,96 @@
+@import "var.css";
+
+.login {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .form {
+    width: 70vw;
+    height: 70vh;
+    background: url("../../public/images/login_bg.jpg");
+    filter: contrast(180%);
+    display: flex;
+}
+.login .form .left {
+    width: 50%;
+    height: 100%;
+    padding: 6rem;
+}
+.login .form .left h3 {
+    color: var(--reddish);
+}
+.login .form .left form {
+    padding: 1rem 4rem 4rem 4rem;
+}
+.login .form .left form div {
+    margin: 3rem 0;
+}
+.login .form .left form div label {
+    font-size: x-large;
+    color: var(--reddish);
+    text-transform: capitalize;
+}
+.login .form .left form div input {
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    width: 100%;
+    font-size: larger;
+}
+.login .form .left form div a{
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: larger;
+    letter-spacing: 2px;
+    background-color: var(--green);
+    color: var(--white) !important;
+    text-transform: uppercase;
+    border: none;
+}
+
+.login .form .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 10px;
+}
+.login .form .middle .line {
+    width: 1px;
+    height: 75%;
+    background-color: var(--white);
+}
+.login .form .middle .arrow {
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    background-color: var(--white);
+}
+
+.login .form .right {
+    width: 50%;
+    height: 100%;
+}
+.login .form .right .create-account {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .form .right .create-account a {
+    cursor: pointer;
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: larger;
+    letter-spacing: 2px;
+    background-color: var(--green);
+    color: var(--white) !important;
+    text-transform: uppercase;
+    border: none;
+}

@@ -1,0 +1,28 @@
+.top-login .form{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.top-login .form .left {
+    width: 60%;
+}
+.top-login .form .left form {
+    margin-top: 2rem;
+}
+.top-login .form .left input {
+    padding-left: 4rem !important;
+}
+.top-login .form .left .phone-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 25px;
+}
+.top-login .form .left .phone-field span {
+    position: absolute;
+    background-color: var(--lightgray);
+    padding: 0.76rem;
+    border-radius: 25px;
+}
